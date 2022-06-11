@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>CV</title>
+</head>
+
+<body>
+    <div class="modal" data-modal="1">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+        </svg>
+        <p class="modal__title"><b>My technology stack</b></p>
+        <div class="stack">
+            <span>Python</span>
+            <span>Django</span>
+            <span>DRF</span>
+            <span>Aiogram</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+    </div>
+    <div class="modal" data-modal="2">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+        </svg>
+        <p class="modal__title"><b>My projects</b></p>
+        <div class="stack">
+            <span>At the moment there are no pet projects, they are in the process of development.</span>
+        </div>
+    </div>
+    <div class="overlay js-overlay-modal"></div>
+    <div class="container">
+        <header class="page-header">
+            <nav class="nav-menu">
+                <ul class="menu">
+                    <li><a class="js-open-modal" data-modal="1" href="#">My technology stack</a></li>
+                    <li><a class="js-open-modal" data-modal="2" href="#">My projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="content-wrapper">
+                <div class="left-section">
+                    <div class="profile-image">
+                        <img class="profile-img" src="./img/profile.jpg" alt="profile">
+                    </div>
+                    <div class="wrapper-info">
+                        <div class="author-name info">
+                            <h2 class="name">
+                                <b>Alex Doved</b>
+                            </h2>
+                        </div>
+                        <div class="age-author info">
+                            age 27
+                        </div>
+                        <div class="location">
+                            <div class="icon-location">
+                                <img src="./img/location.svg" alt="location">
+                            </div>
+                            <div class="city-author">
+                                <span>Moscow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <h2 class="title-about">About</h2>
+                    <div class="about-text">
+                        <p>
+                            Hi, I'm a novice developer.
+                            I have a degree in information security.
+                            But I have never worked in a specialty or in the field of information technology.
+                            I would like to fix it and be involved in something big and creative.
+                            I am actively studying Python and JavaScript.
+                            I have a great motivation to make my own project.
+                            In addition to programming, I like to create design layouts of user interfaces,
+                            draw logos and other graphic elements, create animated screensavers for videos.
+                            In my free time I play tennis, I like acrobatics and running outside.
+                            I would like to speak English, but so far I only understand reading the documentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer">
+            <div class="footer-container">
+                <div class="footer-item">
+                    <a href="https://rs.school/js-stage0/">
+                        <img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="footer-item">
+                    <a class="github-link f-link" href="https://github.com/Snowball558">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div class="contacts footer-item">
+                    <span>сontacts</span>
+                    <a href="https://t.me/AlexDoved">
+                        <img class="telegram" src="./img/telegram.svg" alt="telegram">
+                    </a>
+                </div>
+            </div>
+            <div class="year">
+                © 2022
+            </div>
+        </footer>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
